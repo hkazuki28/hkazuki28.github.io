@@ -58,9 +58,7 @@ body {
 
 .site-header nav {
   display: flex;
-  justify-content: space-between;
-  flex: 1;
-  margin-left: 2rem;
+  gap: 1.5rem;
 }
 
 .site-header nav a {
