@@ -39,26 +39,28 @@ body {
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--border);
 }
 
-.site-header a {
+.site-header > a {
   font-family: "SF Mono", Menlo, "Courier New", monospace;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--fg);
   text-decoration: none;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
-.site-header a:hover { color: var(--accent); }
+.site-header > a:hover { color: var(--accent); }
 
 .site-header nav {
   display: flex;
   gap: 1.5rem;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .site-header nav a {
@@ -66,6 +68,8 @@ body {
   font-size: 0.8125rem;
   font-weight: 400;
   color: var(--muted);
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .site-header nav a:hover { color: var(--fg); }
