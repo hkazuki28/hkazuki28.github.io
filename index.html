@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keystroke Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      padding: 4rem 0 3rem;
+      text-align: center;
+    }
+    .hero .app-name {
+      font-family: "SF Mono", Menlo, "Courier New", monospace;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+    }
+    .hero .tagline {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .links a {
+      font-size: 0.875rem;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--fg);
+      text-decoration: none;
+      transition: border-color 0.15s;
+    }
+    .links a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+    .legal-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    .legal-links a {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .legal-links a:hover { color: var(--fg); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a href="index.html">Task</a>
+      <nav>
+        <a href="keystroke-task-manager/privacy-policy.html">Privacy Policy</a>
+        <a href="keystroke-task-manager/terms-of-service.html">Terms of Service</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <p class="app-name">Task</p>
+      <p class="tagline">A keyboard-first task manager for macOS.</p>
+      <div class="links">
+        <a href="https://apps.apple.com" target="_blank" rel="noopener">Download on the App Store</a>
+        <a href="mailto:kazukihys28@gmail.com">Contact</a>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="legal-links">
+      <a href="keystroke-task-manager/privacy-policy.html">Privacy Policy</a>
+      <a href="keystroke-task-manager/terms-of-service.html">Terms of Service</a>
+    </div>
+
+    <footer class="site-footer">
+      <span>Keystroke Task Manager is developed and provided by Kazuki Hayashi.</span>
+    </footer>
+  </div>
+</body>
+</html>
