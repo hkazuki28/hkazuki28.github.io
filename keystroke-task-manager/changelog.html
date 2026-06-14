@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelog — Keystroke Task Manager</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .release {
+      margin-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .release:last-child {
+      border-bottom: none;
+    }
+    .release-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .release-version {
+      font-size: 1.125rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .release-date {
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+    .release-tag {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      background: var(--code-bg);
+      color: var(--muted);
+      border: 1px solid var(--border);
+    }
+    .release-tag.latest {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .change-group {
+      margin-top: 1rem;
+    }
+    .change-group h3 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+    }
+    .change-group ul {
+      padding-left: 1.25rem;
+      margin-bottom: 0;
+    }
+    .change-group li {
+      font-size: 0.9375rem;
+      margin-bottom: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a href="../index.html">Keystroke Task Manager</a>
+      <nav>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <h1>Changelog</h1>
+    <p class="meta">Keystroke Task Manager — Release history</p>
+
+    <div class="release">
+      <div class="release-header">
+        <span class="release-version">v1.0.0</span>
+        <span class="release-date">TBD</span>
+        <span class="release-tag latest">Latest</span>
+      </div>
+      <div class="change-group">
+        <h3>New</h3>
+        <ul>
+          <li>Initial release</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span>Keystroke Task Manager is developed and provided by Kazuki Hayashi.</span>
+      <span><a href="terms-of-service.html">Terms of Service</a> · <a href="privacy-policy.html">Privacy Policy</a></span>
+    </footer>
+  </div>
+</body>
+</html>
