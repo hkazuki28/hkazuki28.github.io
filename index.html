@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keystroke Task Manager</title>
+  <title>hkazuki28</title>
   <link rel="stylesheet" href="style.css">
   <style>
     .hero {
-      padding: 4rem 0 3rem;
+      padding: 3rem 0 2rem;
       text-align: center;
     }
-    .hero .app-name {
+    .hero .site-name {
       font-family: "SF Mono", Menlo, "Courier New", monospace;
       font-size: 2rem;
       font-weight: 700;
@@ -20,75 +20,86 @@
     .hero .tagline {
       font-size: 1rem;
       color: var(--muted);
-      margin-bottom: 2.5rem;
     }
-    .links {
+    .about {
+      margin: 2rem 0 3rem;
+    }
+    .about p {
+      font-size: 0.9375rem;
+    }
+    .products {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       gap: 1rem;
-      flex-wrap: wrap;
     }
-    .links a {
-      font-size: 0.875rem;
-      padding: 0.5rem 1.25rem;
+    .product-card {
+      display: block;
+      padding: 1.25rem 1.5rem;
       border: 1px solid var(--border);
-      border-radius: 6px;
+      border-radius: 8px;
       color: var(--fg);
       text-decoration: none;
-      transition: border-color 0.15s;
+      transition: border-color 0.15s, transform 0.15s;
     }
-    .links a:hover {
+    .product-card:hover {
       border-color: var(--accent);
-      color: var(--accent);
+      text-decoration: none;
     }
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 2rem 0;
+    .product-name {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.35rem;
     }
-    .legal-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-    }
-    .legal-links a {
+    .product-tagline {
       font-size: 0.875rem;
       color: var(--muted);
+      margin-bottom: 0.5rem;
     }
-    .legal-links a:hover { color: var(--fg); }
+    .product-meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header class="site-header">
-      <a href="index.html">Keystroke Task Manager</a>
-      <nav>
-        <a href="keystroke-task-manager/changelog.html">Changelog</a>
-        <a href="keystroke-task-manager/terms-of-service.html">Terms of Service</a>
-        <a href="keystroke-task-manager/privacy-policy.html">Privacy Policy</a>
-      </nav>
+      <a href="index.html">hkazuki28</a>
     </header>
 
     <div class="hero">
-      <p class="app-name">Keystroke Task Manager</p>
-      <p class="tagline">A keyboard-first task manager for macOS.</p>
-      <div class="links">
-        <a href="https://apps.apple.com" target="_blank" rel="noopener">Download on the App Store</a>
-        <a href="mailto:kazukihys28@gmail.com">Contact</a>
-      </div>
+      <p class="site-name">hkazuki28</p>
+      <p class="tagline">A developer building small software as the mood strikes.</p>
     </div>
 
-    <hr class="divider">
+    <section class="about">
+      <p>Japan-based product manager for a B2B product by day; developer the rest of the time, building small, simple, easy-to-use software. Open to freelance and side-project inquiries &mdash; and always up for a West Coast IPA 🍺.</p>
+    </section>
 
-    <div class="legal-links">
-      <a href="keystroke-task-manager/changelog.html">Changelog</a>
-      <a href="keystroke-task-manager/terms-of-service.html">Terms of Service</a>
-      <a href="keystroke-task-manager/privacy-policy.html">Privacy Policy</a>
+    <h2>Products</h2>
+    <div class="products">
+      <a class="product-card" href="keystroke-task-manager/">
+        <div class="product-name">Keystroke Task Manager</div>
+        <div class="product-tagline">A keyboard-first task manager for macOS.</div>
+        <div class="product-meta">macOS &middot; Available on the App Store</div>
+      </a>
+    </div>
+
+    <h2>Support</h2>
+    <div class="products">
+      <a class="product-card" href="https://ko-fi.com/khayashi" target="_blank" rel="noopener">
+        <div class="product-name">Buy me a beer on Ko-fi 🍺</div>
+        <div class="product-tagline">A cold West Coast IPA keeps the commits flowing &mdash; buy me one and the next release might just ship a little faster.</div>
+        <div class="product-meta">ko-fi.com/khayashi</div>
+      </a>
     </div>
 
     <footer class="site-footer">
-      <span>Keystroke Task Manager is developed and provided by Kazuki Hayashi.</span>
+      <span>&copy; Kazuki Hayashi</span>
+      <span><a href="mailto:kazukihys28@gmail.com">kazukihys28@gmail.com</a></span>
     </footer>
   </div>
 </body>
